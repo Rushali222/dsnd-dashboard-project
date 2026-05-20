@@ -79,3 +79,50 @@ erDiagram
   employee ||--o{ employee_events : "employee_id"
   notes }o--o{ employee_events : ""
 ```
+
+## Project Setup Instructions
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Rushali222/dsnd-dashboard-project.git
+cd dsnd-dashboard-project
+```
+
+### Create Virtual Environment
+
+```bash
+python -m venv env
+```
+
+Activate environment:
+
+Windows:
+
+```bash
+env\Scripts\activate
+```
+
+Mac/Linux:
+
+```bash
+source env/bin/activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Dashboard
+
+```bash
+python report/dashboard.py
+```
+
+### Run Tests
+
+```bash
+pytest tests/
+```
